@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Somando os valores</h1>
+
+<input type="number" name="caixa01" id="caixa01">
+<input type="number" name="caixa02" id="caixa02">
+<input type="button" value="Somar" onclick="somar()">
+
+<div id="resultado">Resultado</div>
+
+<script>
+
+function somar() {
+
+var caixa001 = window.document.getElementById('caixa01')
+var caixa002 = window.document.getElementById('caixa02')
+var resultadofinal = window.document.getElementById('resultado')
+
+var n1 = Number(caixa01.value) 
+var n2 = Number(caixa02.value)
+
+var somafinal = n1 + n2
+
+resultadofinal.innerHTML = somafinal
+
+
+    
+}
+
+</script>
+
+
+
+</body>
+</html>

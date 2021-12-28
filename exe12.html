@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Sistemas de multa</h1>
+Velocidade do carro 
+
+<input type="number" name="velocarro" id="velocarro">
+<input type="button" value="Verificar" onclick="calcular()">
+
+
+<div id="resultado"></div>
+
+<script>
+
+function calcular() {
+
+    var valorvelocidade = window.document.getElementById('velocarro')
+    var resultadodocalculo = window.document.getElementById('resultado')
+    var velocidadeconvertida = Number(velocarro.value) 
+
+    resultadodocalculo.innerHTML = '<p> Sua velocidade atual é de : ' +  velocidadeconvertida
+
+        if (velocidadeconvertida > 60) {
+            
+           resultadodocalculo.innerHTML += '<p> Você está multado por excesso de velocidade! </p>'
+        }
+
+    resultadodocalculo.innerHTML += 'Dirija sempre com cuidado!'
+
+
+    
+}
+
+</script>
+
+
+</body>
+</html>
